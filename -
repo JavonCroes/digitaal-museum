@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitaal Museum</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/geschiedenis">Geschiedenis</a></li>
+                <li><a href="/figuren">Figuren</a></li>
+                <li><a href="/gevechten">Gevechten</a></li>
+                <li><a href="#">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Digitaal Museum</h1>
+            <p>Ontdek geschiedenis, figuren en gevechten met je AI-gids</p>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Geschiedenis</h3>
+                <p>Leer over belangrijke periodes en revoluties.</p>
+                <a href="/geschiedenis" class="button">Bezoek</a>
+            </div>
+            <div class="card">
+                <h3>Figuren</h3>
+                <p>Ontdek invloedrijke personen uit de geschiedenis.</p>
+                <a href="/figuren" class="button">Bezoek</a>
+            </div>
+            <div class="card">
+                <h3>Gevechten</h3>
+                <p>Verdiep je in historische veldslagen en strategieën.</p>
+                <a href="/gevechten" class="button">Bezoek</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Digitaal Museum</p>
+    </footer>
+</body>
+</html>

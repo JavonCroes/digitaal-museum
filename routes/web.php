@@ -8,16 +8,16 @@ use App\Http\Controllers\ExpositionController;
 // Homepage
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-// Algemene geschiedenis
+// Algemene Geschiedenis
 Route::get('/geschiedenis', [ExpositionController::class, 'showHistory'])->name('geschiedenis');
 
-// Historische figuren
+// Historische Figuren
 Route::get('/figuren', [ExpositionController::class, 'showFigures'])->name('figuren');
 
-// ⚔Gevechten / Slagen
+// Gevechten / Slagen
 Route::get('/gevechten', [ExpositionController::class, 'showBattles'])->name('gevechten');
 
-// individual exposition pages
+// Individuele Expositiepagina
 Route::get('/expositie/{id}', [ExpositionController::class, 'show'])->name('expositie.show');
 
 

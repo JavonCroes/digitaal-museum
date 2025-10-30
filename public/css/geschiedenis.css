@@ -1,0 +1,75 @@
+/* ======= Geschiedenis Page (compact & safe) ======= */
+/* NOTE: We do NOT style html, body, or footer here to avoid breaking global layout. */
+
+/* Intro section spacing (balanced) */
+.history-page .intro {
+  text-align: center;
+  margin: 72px 0 28px 0; /* more space above, modest below */
+}
+
+.history-page .intro h1 {
+  font-size: 2.4em;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.history-page .intro p {
+  font-size: 1.05em;
+  color: #555;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+/* Grid wrapper: centered, tighter gaps */
+.history-page .expositions {
+  max-width: 1200px;          /* keeps grid narrow so cards sit closer */
+  margin: 0 auto 56px;        /* centered + space below grid */
+  padding: 8px 24px;          /* minimal outer padding */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;                  /* tighter space between cards (change to 12px if you want even tighter) */
+  justify-items: center;      /* center each card in its grid cell */
+}
+
+/* Card: compact width, no outer margin so gap truly controls spacing */
+.expo-card {
+  width: 100%;
+  max-width: 280px;           /* slightly smaller than before */
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  transition: transform .18s ease, box-shadow .18s ease;
+  text-align: center;         /* center text as requested */
+}
+
+.expo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.12);
+}
+
+/* Image: a bit shorter so cards feel tighter */
+.expo-card img {
+  width: 100%;
+  height: 160px;              /* was 180–200; 160 tightens vertical rhythm */
+  object-fit: cover;
+}
+
+/* Content: reduced padding to compact the card */
+.expo-content {
+  padding: 14px;
+}
+
+.expo-content h3 {
+  margin: 6px 0 6px;
+  font-size: 1.1em;
+  color: #222;
+}
+
+.expo-content p {
+  font-size: 0.92em;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}

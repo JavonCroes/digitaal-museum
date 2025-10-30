@@ -1,0 +1,42 @@
+.exposition-container {
+  max-width: 800px;
+  margin: 100px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.exposition-container img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.exposition-container .year {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.exposition-container .description {
+  font-size: 1.05em;
+  line-height: 1.7;
+  color: #555;
+}
+
+.back-button {
+  margin-top: 30px;
+}
+
+.back-button a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+.back-button a:hover {
+  text-decoration: underline;
+}
